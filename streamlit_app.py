@@ -1,3 +1,7 @@
+import yfinance as yf
+import pandas as pd
+
+
 # Define the ticker and risk-free rate
 ticker = 'AAPL'
 rf_monthly = 0.0025  # 0.25% per month
