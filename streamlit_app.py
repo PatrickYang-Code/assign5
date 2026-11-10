@@ -7,9 +7,9 @@ st.title("AAPL 5-Year Average Stock Price")
 # Fetch 5 years of historical data for AAPL
 data = yf.Ticker("AAPL").history(period="5y")
 if not data.empty:
-# Calculate the total average closing price
-overall_average = data['Close'].mean()
-# Print the result directly to the screen
-st.metric(label="5-Year Average Price", value=f"${overall_average:.2f}")
+  # Calculate the total average closing price
+  overall_average = data['Close'].mean()
+  # Print the result directly to the screen
+  st.metric(label="5-Year Average Price", value=f"${overall_average:.2f}")
 else:
-st.error("No data found for AAPL."
+  st.error("No data found for AAPL."
